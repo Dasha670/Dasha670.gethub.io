@@ -62,7 +62,7 @@ table {
 th, td {
   border: 1px solid black;
   padding: 10px;
-  text-align: center;
+  text-align: left;
 }
 th {
   background-color: #fb7c21;
