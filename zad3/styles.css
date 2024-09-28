@@ -1,0 +1,148 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-optical-sizing:  unset;
+    font-style: normal;
+    color: #2f02cb;
+}
+
+header {
+  
+  display: flex;
+  justify-content:center;
+  align-items: center;
+
+  background-color:#fb7c21;
+  padding: 25px;
+  height: max-content;
+}
+
+nav {
+  flex: 1;
+  order: 2;
+  text-align: left;
+  flex-direction: column;
+  display: flex;
+  
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    width: 875px;
+    max-width: 960px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
+.header-content>.logo-text {
+  display: flex;
+  gap: 30px;
+  flex-direction: row;
+  align-items:center;
+}
+
+.header-content>nav>ul {
+  padding: 5px;
+  margin: 5px;
+  flex-direction: column;
+  display: flex;
+  justify-items: start;
+  gap: 5px;
+  list-style-type: none;
+  overflow: hidden;
+  font-size: 25px;
+  
+}
+
+.logo {
+    width: 130px;
+    border-radius: 30%;
+}
+
+.background {
+    background-color: #fc9a50;
+}
+
+main>.useless {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+main {
+    max-width: 960px;
+    padding: 10px;
+    padding-bottom: 40px;
+    margin: 0 auto;
+    background-color: #fc9a50;
+}
+
+
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+form {
+  padding: 25px;
+  background-color: #fc9a50;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+th {
+  background-color: #fb7c21;
+}
+tr:nth-child(even) {
+  background-color: #fce6d6;
+}
+tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+
+
+#table{
+  flex: 1;
+  order: 1;
+  overflow: scroll;
+}
+#form{
+  flex: 1;
+  order: 3;
+  
+}
+
+
+#footer-inscription {
+  font-size: auto;
+  background-color:#fb7c21;
+}
+
+@media screen and (min-width: 800px) {
+ 
+  main>.useless {
+    flex-direction: column;
+  }
+  .header-content {
+    align-items:start;
+    flex-direction: row;
+
+  }
+
+  .header-content>nav>ul {
+    flex-direction: row;
+    justify-content:end;
+  }
+}
