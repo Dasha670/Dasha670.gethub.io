@@ -39,7 +39,7 @@ nav {
     width: 875px;
     max-width: 960px;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 25px;
+    font-size: avto;
 }
 
 .header-content>.logo-text {
@@ -138,7 +138,6 @@ tr:nth-child(odd) {
   .header-content {
     align-items:start;
     flex-direction: row;
-    font-size: auto;
   }
 
   .header-content>nav>ul {
