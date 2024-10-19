@@ -33,14 +33,17 @@ window.addEventListener("DOMContentLoaded", function () {
       const selectedType = document.querySelector('input[name="serviceType"]:checked').value;
       let optionPrice = parseInt(optionSelect.value) || 0;
       let propertyPrice = propertyCheckbox.checked ? 50 : 0;
+      let totalPrice=0;
       if (selectedType === "1") {
           basePrice = 10;
+          totalPrice = (basePrice) * quantity;
       } else if (selectedType === "2") {
           basePrice = 50;
+          totalPrice = (basePrice + optionPrice ) * quantity;
       } else if (selectedType === "3") {
           basePrice = 100;
+          totalPrice = (basePrice + propertyPrice) * quantity;
       }
-      let totalPrice = (basePrice + optionPrice + propertyPrice) * quantity;
       totalPriceDisplay.textContent = totalPrice;
   }
 
