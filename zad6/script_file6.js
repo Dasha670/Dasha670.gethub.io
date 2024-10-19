@@ -19,7 +19,7 @@ window.addEventListener("DOMContentLoaded", function () {
   b.addEventListener("click", click1);
 
   const quantityInput = document.getElementById("quantity");
-  const serviceTypeRadios = document.querySelectorAll("input[name="serviceType"]");
+  const serviceTypeRadios = document.querySelectorAll('input[name="serviceType"]');
   const optionsDiv = document.getElementById("options");
   const propertiesDiv = document.getElementById("properties");
   const optionSelect = document.getElementById("optionSelect");
@@ -30,7 +30,7 @@ window.addEventListener("DOMContentLoaded", function () {
       let quantity = parseInt(quantityInput.value) || 0;
       let basePrice = 0;
 
-      const selectedType = document.querySelector("input[name="serviceType"]:checked").value;
+      const selectedType = document.querySelector('input[name="serviceType"]:checked').value;
       let optionPrice = parseInt(optionSelect.value) || 0;
       let propertyPrice = propertyCheckbox.checked ? 50 : 0;
       if (selectedType === "1") {
@@ -45,7 +45,7 @@ window.addEventListener("DOMContentLoaded", function () {
   }
 
   function updateForm() {
-      const selectedType = document.querySelector("input[name="serviceType"]:checked").value;
+      const selectedType = document.querySelector('input[name="serviceType"]:checked').value;
 
       if (selectedType === "1") {
           optionsDiv.classList.add("hidden");
