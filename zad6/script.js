@@ -1,5 +1,4 @@
 function click1(event) {
- function click1(event) {
   event.preventDefault();
   let f1 = document.getElementsByName("field");
   let f2 = document.getElementsByName("select");
@@ -70,6 +69,4 @@ window.addEventListener("DOMContentLoaded", function () {
   propertyCheckbox.addEventListener("change", updatePrice);
 
   updateForm();
-});
-
 });
