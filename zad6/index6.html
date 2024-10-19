@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Основы Javascript</title>
+    <style>
+      .hidden {
+          display: none;
+      }
+  </style>
+  </head>
+
+    
+
+  <body>
+    <h1>Калькулятор стоимости товара</h1>
+    <form>
+      <input name="field" type="number">
+      <select name="select"> 
+        <option value="30">Арбуз</option>
+        <option value="40">Дыня</option>
+        <option value="100">Слива</option>
+        <option value="120">Персик</option>
+        <option value="250">Вишня</option>
+        <option value="80">Яблоко</option>
+      </select>
+      <button id="pr">Подсчёт</button>
+    </form>
+    <div id="price"></div>
+    <div id="resultat"></div>
+
+    <h2>Калькулятор стоимости услуги</h2>
+    <form>
+      <label for="quantity">Количество:</label>
+      <input type="number" id="quantity" min="1" value="1"><br><br>
+
+      <label>Тип услуги:</label><br>
+      <input type="radio" name="serviceType" value="1" checked>Бонусная карта<br>
+      <input type="radio" name="serviceType" value="2">Доставка<br>
+      <input type="radio" name="serviceType" value="3">Сбор заказа<br><br>
+
+      <div id="options" class="hidden">
+        <label for="optionSelect">Выбор опции:</label>
+        <select id="optionSelect">
+          <option value="0">Выберите опцию</option>
+          <option value="100">Быстрая доставка (100)</option>
+          <option value="200">Доставка  по клику (200)</option>
+        </select>
+      </div>
+
+      <div id="properties" class="hidden">
+        <label>
+          <input type="checkbox" id="propertyCheckbox" value="50">Празднечная упаковка (50)
+        </label>
+      </div>
+
+      <h3>Итоговая стоимость: <span id="totalPrice">0</span></h3>
+    </form>
+
+      
+    <script src="script_file6.js"></script>
+  </body>
+
+</html>
