@@ -1,0 +1,20 @@
+.responsive {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 93%;
+    
+}
+
+.responsive div {
+    display: flex;
+    justify-content: center;
+}
+
+.responsive div img {
+    max-height: 800px;
+    width: 95%;
+}
+body{
+    background-color: #ea6c12;
+}
