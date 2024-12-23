@@ -35,7 +35,7 @@ form.addEventListener('submit', async (e) => {
     const formData = new FormData(form);
 
     try {
-        const response = await fetch('https://formcarry.com/s/g7ga5yAahTs', {
+        const response = await fetch('https://formcarry.com/s/I6uGHP7kD0s', {
             method: 'POST',
             body: formData,
         });
